@@ -22,4 +22,4 @@
 #define TRAILING_NONES NONE(0, 0, 0)
 
 // Include main artsey.io keymap
-#include "../../../artsey.dtsi"
+#include "../../../config/artsey.dtsi"
