@@ -1,0 +1,2 @@
+config SHIELD_TWO_BY_FOUR
+	def_bool $(shields_list_contains, two_by_four)
