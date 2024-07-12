@@ -1,2 +1,5 @@
-config SHIELD_TWO_BY_FOUR
-	def_bool $(shields_list_contains, two_by_four)
+config SHIELD_TWO_BY_FOUR_LEFT
+	def_bool $(shields_list_contains, two_by_four_left)
+
+config SHIELD_TWO_BY_FOUR_RIGHT
+	def_bool $(shields_list_contains, two_by_four_right)
