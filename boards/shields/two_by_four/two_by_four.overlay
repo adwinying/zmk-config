@@ -21,9 +21,9 @@
 
   leds {
 		compatible = "gpio-leds";
-		powerled: led_p {
+		actled: led_a {
 			gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
-			label = "PWR LED";
+			label = "ACT LED";
 		};
 	};
 };
