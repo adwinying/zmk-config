@@ -18,4 +18,12 @@
       <&pro_micro_d  9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
       <&pro_micro_d 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 	};
+
+  leds {
+		compatible = "gpio-leds";
+		powerled: led_p {
+			gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
+			label = "PWR LED";
+		};
+	};
 };
