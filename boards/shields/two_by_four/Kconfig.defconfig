@@ -1,6 +1,6 @@
 if SHIELD_TWO_BY_FOUR
 
 config ZMK_KEYBOARD_NAME
-	default "Two x Four"
+	default "TwoByFour"
 
 endif
