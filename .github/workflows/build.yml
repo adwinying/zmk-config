@@ -71,7 +71,7 @@ jobs:
       - name: Prep artifact (${{ matrix.shield }}-${{ matrix.board }}-zmk-artsey.uf2)
         run: cp build/zephyr/zmk.uf2 ${{ matrix.shield }}-${{ matrix.board }}-zmk-artsey.uf2
       - name: Archive artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: '${{ steps.variables.outputs.artifact-name }}'
           path: |
@@ -97,7 +97,7 @@ jobs:
           <br>Released on ${{ steps.date.outputs.date }}.
           <br><br>${{ steps.docker_build.outputs.commits }}')"
       - name: Download build artifacts for release
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           path: release
       - name: List files to include in release
